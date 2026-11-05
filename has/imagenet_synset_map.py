@@ -1,0 +1,19 @@
+from .imagenet_dic import IMAGENET_DIC, SORTED_BY_SYNSET_IMAGENET_CLASSES, SORTED_BY_SYNSET_IMAGENET_CLASSES_CLIP_NAMES
+
+# Create a mapping from class names to synset IDs
+SORTED_BY_SYNSET_IMAGENET_CLASSES_IMAGENET_CLASS_TO_SYNSET = {}
+SORTED_BY_SYNSET_IMAGENET_CLASSES_CLIP_NAMES_IMAGENET_CLASS_TO_SYNSET = {}
+
+SYNSET_TO_IMAGENET_CLASSES = {}
+SYNSET_TO_IMAGENET_CLASSES_CLIP_NAMES = {}
+for idx, (synset_id, label) in IMAGENET_DIC.items():
+    # Get the corresponding class name from SORTED_BY_SYNSET_IMAGENET_CLASSES
+    class_name = SORTED_BY_SYNSET_IMAGENET_CLASSES[int(idx)]
+    # Map the class name to the synset ID
+    SORTED_BY_SYNSET_IMAGENET_CLASSES_IMAGENET_CLASS_TO_SYNSET[class_name] = synset_id
+
+    class_name_clip = SORTED_BY_SYNSET_IMAGENET_CLASSES_CLIP_NAMES[int(idx)]
+    SORTED_BY_SYNSET_IMAGENET_CLASSES_CLIP_NAMES_IMAGENET_CLASS_TO_SYNSET[class_name_clip] = synset_id
+
+    SYNSET_TO_IMAGENET_CLASSES[synset_id] = class_name
+    SYNSET_TO_IMAGENET_CLASSES_CLIP_NAMES[synset_id] = class_name_clip
