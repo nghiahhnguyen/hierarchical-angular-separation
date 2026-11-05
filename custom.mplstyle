@@ -1,0 +1,21 @@
+# --- Personal Overrides on top of SciencePlots ---
+
+# 1. Aesthetics (The "Clean" Look)
+axes.grid : True
+axes.grid.axis : y
+grid.alpha : 0.3
+grid.linestyle : --
+xtick.top : False
+ytick.right : False
+
+# 2. Typography (Override SciencePlots' Serif default)
+font.family : sans-serif
+font.sans-serif : Arial, DejaVu Sans, Liberation Sans
+font.size: 18
+
+# 3. Colors (Okabe-Ito Colorblind Friendly)
+# This ensures consistency even if SciencePlots changes its defaults
+axes.prop_cycle : cycler('color', ['0072B2', 'E69F00', '56B4E9', '009E73', 'F0E442', 'D55E00', 'CC79A7'])
+
+# 4. Legend
+legend.frameon : False

@@ -1,0 +1,99 @@
+{
+  "repository": "https://github.com/nghiahhnguyen/hierarchy_learning",
+  "commit": "a8427fa59aa204de5a218a40756169d9ca463d09",
+  "files": [
+    {
+      "source": "src/utils/hierarchy_utils.py",
+      "target": "has/hierarchy.py",
+      "symbols": [
+        "load_hierarchy_from_json",
+        "build_imagenet_hierarchy_graph",
+        "collapse_unary_nodes",
+        "compute_node_depths"
+      ],
+      "sha256": "59ae3b969842d2d7cd744e0889db7e7281fc3d20926639cade0280bdb196e2f2"
+    },
+    {
+      "source": "src/utils/hierarchy/evaluation.py",
+      "target": "has/measurement.py",
+      "symbols": [
+        "test_branch_separation"
+      ],
+      "sha256": "0d4d60e3636e3d11ba6a1b3fb888b62b4dd8e044772ed2af6d83b71f0b2406a9"
+    },
+    {
+      "source": "scripts/clip/hierarchy_test/_disjoint_split_common.py",
+      "target": "has/splits.py",
+      "symbols": [
+        "split_even_odd_embeddings",
+        "aggregate_descendant_leaf_embeddings",
+        "shuffle_leaf_assignments",
+        "_gaussian_splits_from_counts",
+        "_compute_branch_statistics",
+        "average_branch_separation_results",
+        "_PER_NODE_FLOAT_FIELDS",
+        "_META_EXCLUDE"
+      ],
+      "sha256": "e1d5a4884305edae144becc324ed9c1e80262c5d067dac1ad9cad2c0223c33e7"
+    },
+    {
+      "source": "src/datasets/imagenet_dic.py",
+      "target": "has/imagenet_dic.py",
+      "sha256": "1df74e87173c02abf1d479f36d0b1275669e8505943d8830f8a87bb6b111a58c"
+    },
+    {
+      "source": "src/datasets/imagenet_synset_map.py",
+      "target": "has/imagenet_synset_map.py",
+      "sha256": "ebe945002bb209bc3c7e183397e8aa493120301a3f9cd5613503a859af0bfc33"
+    },
+    {
+      "source": "src/hierarchy.py",
+      "target": "synthetic/hierarchy.py",
+      "sha256": "bfdd60fbbbfb05dafe69ccb29e57c00b60866f8aa89cef5cbf807809dd9edf3d"
+    },
+    {
+      "source": "src/synthetic_data.py",
+      "target": "synthetic/synthetic_data.py",
+      "sha256": "4b8b69385aa85bfb5785bfeebeb99a65f0fcaf8b746bb2d513423fdddc95b61b"
+    },
+    {
+      "source": "src/model.py",
+      "target": "synthetic/model.py",
+      "sha256": "6f3c4af4e0a4a2327ae94f212101ec2f94ff82419ad95d6cf237f31d7d5597f7"
+    },
+    {
+      "source": "src/metrics.py",
+      "target": "synthetic/metrics.py",
+      "sha256": "d114a67b286ebd25586e19fb0f533268e3bcc956ce44ffa912664e69ab27dc48"
+    },
+    {
+      "source": "scripts/analytic_model/run_experiment.py",
+      "target": "synthetic/run_experiment.py",
+      "sha256": "bf52a88a2291fbab55176fdc455a5843f43f3cb76b02c2e365e00f1e4edea139",
+      "release_changes": [
+        "Resolve sibling synthetic modules locally.",
+        "Log the data seed in MLflow parameters; numerical code is unchanged."
+      ]
+    },
+    {
+      "source": "scripts/analytic_model/compute_branch_depth_margin.py",
+      "target": "synthetic/compute_branch_depth_margin.py",
+      "sha256": "fe77bfd36adcea5d7fc073ed26cffa467c6d9b9a1e895e3f69dcec2a9a7f50b6"
+    },
+    {
+      "source": "scripts/autosweep/40/plot_loss_violation.py",
+      "target": "synthetic/plot_loss_violation.py",
+      "sha256": "eee27f5bcb9cb351d6c53980d0125583766ceaf43c99bd125ced011508a50c33"
+    },
+    {
+      "source": "scripts/autosweep/46/plot_noncentered_root.py",
+      "target": "synthetic/plot_noncentered_root.py",
+      "sha256": "8bb578f182b498df012e087e93130c611b95ae0c3b474c7ab10638ac952ba1de"
+    },
+    {
+      "source": "custom.mplstyle",
+      "target": "custom.mplstyle",
+      "sha256": "5adde12946af80df3763763abca050efee78ab090660bbbf44840709277f9e52"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+results/
+mlruns/
+*.db
+*.pt
+*.pth
+.DS_Store
+
+# Experiment outputs stay local.
+assets/
+reference/
